@@ -1,0 +1,10 @@
+<section class="text-gray-600 body-font">
+  <h1>Les différentes générations :</h1>
+    <div class="container px-5 py-24 mx-auto">
+         <div class="flex flex-wrap -m-4">
+            @for (gen of generations; track $index) {
+              <a class="mr-5 hover:text-gray-900" routerLink="['/generation']" routerLinkActive="active">{{gen.name | uppercase}} </a>
+            }
+        </div> 
+    </div>
+</section>
